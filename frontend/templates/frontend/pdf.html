@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>PDF Report</title>
+    <link rel="stylesheet" href={% static 'frontend/bootstrap/css/bootstrap.min.css' %}>
+</head>
+<body>
+<div class="container">
+    <div class="row text-center"><h2>Notes Summarizer by arushsharma.tech</h2></div>
+    <div class="row"><h2>Summary</h2></div>
+    <div class="row">{{ summary }}</div>
+    <div class="row"><h2>Note</h2></div>
+    <div class="row">{{ note }}</div>
+</div>
+
+</body>
+</html>
