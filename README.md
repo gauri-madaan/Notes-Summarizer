@@ -1,7 +1,27 @@
 <div  align="center">
-<h1><a href="https://notes-summarizer.herokuapp.com/">Notes-Summarizer</a></h1>
-<a href="https://notes-summarizer.herokuapp.com/">Try It Here!</a>
+<h1>Notes-Summarizer: <a href="https://notes-summarizer.herokuapp.com/"> Try A Demo Here!</a></h1>
+
 </div>
 <div  align="center">
-<img src="images/main.png">
+<a href="https://notes-summarizer.herokuapp.com/"><img src="images/main.png"></a>
+</div>
+
+<div  align="left">
+  <h2>Implementation</h2>
+  <div  align="center">
+<img src="images/imp.png">
+</div>
+  1. All stopwords are removed.<br /> 
+  2. Stemming is performed.<br />
+  3. Part of speech tagging is performed in order to obtain nouns.<br />
+  4. Term frequency and  inverse document frequency matrix are created.<br />
+  5. Sentence score is given, and the average is calculated.<br />
+  6. A threshold score (1.1 * average sentence score) is set, and all sentences above it are extracted.<br />
+  7. Sentences are arranged in the chronological order of their original text.<br />
+</div>
+
+
+<div  align="left">
+  <h2>About the Algorithm Used - <i>tf-idf</i></h2>
+  The Term frequency method scores the words based on their occurrences. Term Frequency incorrectly emphasizes on commonly occurring words which may not contribute to the overall meaning. Hence, inverse document frequency provides a factor that reduces the weight of the pieces that occur frequently and increases the value of times, which happens rarely. Here, it is assumed that rarely occurring words are relatively more important. The IDF is a logarithmically scaled fraction to measure the amount of knowledge provided by the word. The TF-IDF is a product of the term frequency and the Inverse Document Frequency to define the importance of the keyword or the phrase within the original document. 
 </div>
